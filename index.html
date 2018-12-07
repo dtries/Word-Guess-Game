@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Hockey Slang Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Cabin+Sketch" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/sports-ice-hockey-icon-4.png">
+
+    </head>
+
+    <body>
+
+        <!-- Primary Heading -->
+        <div class = "Main_Header">
+            <h1>Hockey Slang Game</h1>
+        </div>
+
+        <div class = "Screen-Wrap">
+
+            <div class ="Game-Card-Wrapper">
+
+                <!-- On screen instructions -->
+                <h2>Press Any Key to Begin to Get Started!</h2>
+
+                <!--Word and Definition Area-->
+                <h4 id = "Word_And_Defn"> Word and Definition Appear Here After Correct Guess</h4>
+
+                <!-- Image of Arrow pointing to word guess area -->
+                <div>
+                    <img id="Current-Image" src="./assets/images/animated-arrow.gif" width = "20%" height ="100">
+                    
+                </div>
+
+                <!-- Container for word to guess -->
+                <div id = "Word-to-Guess">
+                    <h3 id="Word-Up">_ _ _ _ _ _</h3>
+                    
+                </div>
+
+                <!-- Container for the entire scoreboard -->
+                <div class = "Scoring-Display">
+
+                    <!-- Container for Scoring Chances Remaining -->
+                    <div id = "Scoring-Element">
+                        <h3> Guesses Remaining:
+                            <span id = "Guesses-Remaining"> <!-- tags for css and JS -->
+
+                            </span>
+                        </h3>   
+
+                    </div>  
+
+                    <!-- Container for Scoring Words Correct  -->
+                    <div id = "Scoring-Element">
+                        <h3> Words Correct: 
+                            <span id = "Words-Correct"> <!-- tags for css and JS -->
+
+                            </span>
+                        </h3>
+                    </div>
+
+                    <!-- Container for Scorring Words Not Guessed -->
+                    <div id = "Scoring-Element">
+                        <h3> Words Missed:
+                            <span id = "Words-Missed"> <!-- tags for css and JS -->
+
+                            </span>
+                        </h3>
+                    </div>
+
+                    <!-- Container to Track Incorrect Letters Guessed -->
+                    <div id = "Scoring-Element">
+                        <h3>Letters Guessed Incorrectly: 
+                            <span id = "Letters-Incorrect"> <!-- tags for css and JS -->
+
+                            </span>
+                        </h3>
+                    </div>
+
+                </div> 
+
+            </div>
+
+        </div>
+
+        <!-- Audio -->
+    
+        <!-- <audio id = "Zamboni">
+            <source src = "./assets/audio/01 - I Wanna Drive the Zamboni.mp3" type="audio/mp3" loop="loop">
+        </audio> -->
+
+        <div class = "Music-Play">
+            <div id = "MoodMusic">
+                <h3>Press Play for Mood Music: </h3>
+            </div>
+
+            <audio id = "Tune-Control" controls autoplay loop> 
+                <source src="./assets/audio/01 - I Wanna Drive the Zamboni.mp3" type="audio/mpeg"> 
+            </audio>
+
+        </div>
+
+
+        <!-- <div class = "Shoots-Scores">
+                <iframe width="640" height="360" src="https://vlipsy.com/embed/yPJZOft6" frameborder="0" allowfullscreen></iframe>https://vlipsy.com/vlip/happy-gilmore-he-shoots-he-scores-yPJZOft6
+        </div> -->
+
+
+            
+
+       
+        <!-- Script link for javascript -->
+        <script src="./assets/javascript/game.js">
+        </script>
+
+    </body>
+</html>
